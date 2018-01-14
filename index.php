@@ -5,6 +5,7 @@
 ?>
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css"> <!-- include our stylesheet -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 	<?php 
@@ -67,4 +68,5 @@
 		echo '</div>';
 	echo '</div>';
 	?>
+	<script language="javascript" type="text/javascript" src="move.js"></script> <!-- add move.js file -->
 </body>
