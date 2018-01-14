@@ -2,3 +2,52 @@
 Description: An importer for residential listings. 
 Version: 1.0
 */
+
+.container{
+	max-width:1000px;
+	margin:50px auto;
+}
+
+img{
+	max-width:100%;
+}
+
+h1{
+	font-size:30px;
+	text-align:center;
+	margin-bottom:50px;
+}
+h2{
+	font-size:22px;
+	text-align:center;
+	margin-bottom:30px;
+}
+
+.results, .saved{
+	display:inline-block;
+	width:50%;
+	text-align:center;
+	vertical-align:top;
+}
+
+.listing{
+	max-width:400px;
+	margin: 0 auto 50px;
+	border-radius: 5px;
+    border: 1px solid #ccc;
+    position:relative;
+}
+
+.listing-header{
+	float:left;
+	width:100%;
+}
+.logo{
+	float:left;
+	padding: 20px;
+}
+.price{
+	font-size:22px;
+	text-align:left;
+	padding:20px;
+}
