@@ -18,8 +18,22 @@
 	echo '<h2>Results</h2>';
 	// tap into the $results array to start listing each result separately
 	foreach($results as $key=>$value){
-	    print_r($value); 
-	    echo '<br><br>';
+	    $id = $value['id']; // store the ID of the listing into a variable to be used later.
+	    echo '<div id="listing-'.$id.'" class="listing">'; 
+	    // Use the ID variable to create a unique ID for each listing we are going to display.
+	    // Tap into the results array to populate the rest of the variables we are going to need.
+	        $price = $value['price'];
+	        $mainImage = $value['mainImage'];
+	        $logo = $value['agency']['logo'];
+	        $colour = $value['agency']['brandingColors']['primary'];
+
+	        // Below we will start using our populated variables to start mapping out how we want to display the data.
+	        echo '<div class="listing-header" style="background-color:'.$colour.'">';
+	        	echo '<div class="logo"><img src="'.$logo.'"/></div>';
+	        echo '</div>';
+	        echo '<div class="image"><img src="'.$mainImage.'"/></div>';
+	        echo '<div class="price">'.$price.'</div>';
+	    echo '</div>';
 	}
 	echo '</div>';
 
