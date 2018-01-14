@@ -34,6 +34,11 @@
 			        echo '</div>';
 			        echo '<div class="image"><img src="'.$mainImage.'"/></div>';
 			        echo '<div class="price">'.$price.'</div>';
+			        // creating an 'on hover' element to our listings.  
+			        echo '<div class="onhover">';
+			        	echo '<span class="adding">Add Property</span>';
+			        	echo '<span class="removing">Remove Property</span>';
+			        echo '</div>';
 			    echo '</div>';
 			}
 		echo '</div>';
@@ -53,6 +58,10 @@
 			        echo '</div>';
 			        echo '<div class="image"><img src="'.$mainImage.'"/></div>';
 			        echo '<div class="price">'.$price.'</div>';
+			        // creating an 'on hover' element to our listings.
+			        echo '<div class="onhover">';
+			        	echo '<span class="removing">Remove Property</span>';
+			        echo '</div>';
 			    echo '</div>';
 			}
 		echo '</div>';
